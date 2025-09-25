@@ -1,14 +1,14 @@
 // src/main/java/com/bookmyshow/Controllers/ForgetPasswordController.java
 package com.bookmyshow.Controllers;
 
-import com.bookmyshow.Config.PasswordConfig;
+import com.bookmyshow.Config.PasswordConfig; // exposes a PasswordEncoder (e.g., BCrypt)
 import com.bookmyshow.Dtos.RequestDtos.ChangePassword;
 import com.bookmyshow.Dtos.ResponseDtos.MailBody;
 import com.bookmyshow.Models.ForgetPassword;
 import com.bookmyshow.Models.User;
 import com.bookmyshow.Repositories.ForgetPasswordRepository;
 import com.bookmyshow.Repositories.UserRepository;
-import com.bookmyshow.Services.EmailService;
+import com.bookmyshow.Services.EmailService; // EmailService to send OTP by email.
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -27,6 +27,8 @@ public class ForgetPasswordController {
     private final EmailService emailService;
     private final ForgetPasswordRepository forgetPasswordRepository;
     private final PasswordConfig passwordConfig;
+    // Declares required collaborators and wires them via constructor injection
+    // PasswordConfig will give you passwordEncoder() when changing passwords.
 
     public ForgetPasswordController(UserRepository userRepository, EmailService emailService, ForgetPasswordRepository forgetPasswordRepository, PasswordConfig passwordConfig) {
         this.userRepository = userRepository;

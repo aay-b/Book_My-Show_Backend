@@ -1,33 +1,60 @@
-2025-07-30T12:02:41.201+05:30  INFO 59919 --- [main] com.bookmyshow.BookMyShowApplication     : Starting BookMyShowApplication using Java 21.0.5 with PID 59919 (/Users/Aayush/Desktop/book-my-show-clone-newest/target/classes started by Aayush in /Users/Aayush/Desktop/book-my-show-clone-newest)
-2025-07-30T12:02:41.203+05:30 DEBUG 59919 --- [main] com.bookmyshow.BookMyShowApplication     : Running with Spring Boot v3.3.1, Spring v6.1.10
-2025-07-30T12:02:41.203+05:30  INFO 59919 --- [main] com.bookmyshow.BookMyShowApplication     : No active profile set, falling back to 1 default profile: "default"
-2025-07-30T12:02:42.169+05:30  INFO 59919 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2025-07-30T12:02:42.266+05:30  INFO 59919 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 85 ms. Found 9 JPA repository interfaces.
-2025-07-30T12:02:43.181+05:30  INFO 59919 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
-2025-07-30T12:02:43.200+05:30  INFO 59919 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2025-07-30T12:02:43.201+05:30  INFO 59919 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.25]
-2025-07-30T12:02:43.319+05:30  INFO 59919 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2025-07-30T12:02:43.319+05:30  INFO 59919 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2074 ms
-2025-07-30T12:02:43.617+05:30  INFO 59919 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2025-07-30T12:02:43.676+05:30  INFO 59919 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
-2025-07-30T12:02:43.708+05:30  INFO 59919 --- [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2025-07-30T12:02:44.000+05:30  INFO 59919 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2025-07-30T12:02:44.052+05:30  INFO 59919 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2025-07-30T12:02:46.636+05:30  INFO 59919 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@154b0748
-2025-07-30T12:02:46.639+05:30  INFO 59919 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2025-07-30T12:02:46.896+05:30  WARN 59919 --- [main] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2025-07-30T12:02:46.896+05:30  WARN 59919 --- [main] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
-2025-07-30T12:02:48.163+05:30  INFO 59919 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2025-07-30T12:02:48.930+05:30 DEBUG 59919 --- [main] org.hibernate.SQL                        : alter table reviews modify column comment TEXT
-2025-07-30T12:02:56.797+05:30  INFO 59919 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2025-07-30T12:02:57.155+05:30 DEBUG 59919 --- [main] com.bookmyshow.Config.JwtAuthFilter      : Filter 'jwtAuthFilter' configured for use
-2025-07-30T12:02:57.231+05:30  INFO 59919 --- [main] eAuthenticationProviderManagerConfigurer : Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
-2025-07-30T12:02:57.232+05:30  WARN 59919 --- [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used for username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider.
-2025-07-30T12:02:57.290+05:30  INFO 59919 --- [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
-2025-07-30T12:02:57.914+05:30  WARN 59919 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2025-07-30T12:02:58.342+05:30  INFO 59919 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
-2025-07-30T12:02:58.835+05:30  INFO 59919 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
-2025-07-30T12:02:58.847+05:30  INFO 59919 --- [main] com.bookmyshow.BookMyShowApplication     : Started BookMyShowApplication in 18.101 seconds (process running for 18.603)
-2025-07-30T12:16:12.694+05:30  INFO 59919 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2025-07-30T12:16:12.700+05:30  INFO 59919 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2025-07-30T12:16:14.660+05:30  INFO 59919 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-09-15T15:43:25.423+01:00  INFO 32520 --- [main] com.bookmyshow.BookMyShowApplication     : Starting BookMyShowApplication using Java 21.0.5 with PID 32520 (/Users/Aayush/Desktop/newest_codes/book-my-show-clone/target/classes started by Aayush in /Users/Aayush/Desktop/newest_codes/book-my-show-clone)
+2025-09-15T15:43:25.427+01:00 DEBUG 32520 --- [main] com.bookmyshow.BookMyShowApplication     : Running with Spring Boot v3.5.3, Spring v6.2.8
+2025-09-15T15:43:25.427+01:00  INFO 32520 --- [main] com.bookmyshow.BookMyShowApplication     : No active profile set, falling back to 1 default profile: "default"
+2025-09-15T15:43:26.681+01:00  INFO 32520 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-09-15T15:43:26.786+01:00  INFO 32520 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 88 ms. Found 10 JPA repository interfaces.
+2025-09-15T15:43:27.475+01:00  INFO 32520 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-09-15T15:43:27.495+01:00  INFO 32520 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-09-15T15:43:27.495+01:00  INFO 32520 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.42]
+2025-09-15T15:43:27.566+01:00  INFO 32520 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-09-15T15:43:27.567+01:00  INFO 32520 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2097 ms
+2025-09-15T15:43:27.879+01:00  INFO 32520 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-09-15T15:43:27.973+01:00  INFO 32520 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.18.Final
+2025-09-15T15:43:28.033+01:00  INFO 32520 --- [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-09-15T15:43:28.588+01:00  INFO 32520 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-09-15T15:43:28.646+01:00  INFO 32520 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-09-15T15:43:29.294+01:00  INFO 32520 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@ea84346
+2025-09-15T15:43:29.296+01:00  INFO 32520 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-09-15T15:43:29.386+01:00  WARN 32520 --- [main] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-09-15T15:43:29.387+01:00  WARN 32520 --- [main] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2025-09-15T15:43:29.407+01:00  INFO 32520 --- [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-09-15T15:43:30.975+01:00  INFO 32520 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-09-15T15:43:31.139+01:00  INFO 32520 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-09-15T15:43:31.558+01:00 DEBUG 32520 --- [main] com.bookmyshow.Config.JwtAuthFilter      : Filter 'jwtAuthFilter' configured for use
+2025-09-15T15:43:31.619+01:00  INFO 32520 --- [main] eAuthenticationProviderManagerConfigurer : Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2025-09-15T15:43:31.620+01:00  WARN 32520 --- [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used by Spring Security for automatically configuring username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider. If the current configuration is intentional, to turn off this warning, increase the logging level of 'org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer' to ERROR
+2025-09-15T15:43:31.676+01:00  INFO 32520 --- [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-09-15T15:43:32.561+01:00  WARN 32520 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-09-15T15:43:32.965+01:00  INFO 32520 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2025-09-15T15:43:33.710+01:00  INFO 32520 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-09-15T15:43:33.725+01:00  INFO 32520 --- [main] com.bookmyshow.BookMyShowApplication     : Started BookMyShowApplication in 8.901 seconds (process running for 14.878)
+2025-09-15T15:43:34.109+01:00  INFO 32520 --- [RMI TCP Connection(4)-192.168.1.203] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-09-15T15:43:34.109+01:00  INFO 32520 --- [RMI TCP Connection(4)-192.168.1.203] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-09-15T15:43:34.112+01:00  INFO 32520 --- [RMI TCP Connection(4)-192.168.1.203] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2025-09-15T15:44:35.765+01:00  INFO 32520 --- [http-nio-8080-exec-3] com.bookmyshow.Services.MovieService     : Fetching all movies.
+2025-09-15T15:44:35.899+01:00 DEBUG 32520 --- [http-nio-8080-exec-3] org.hibernate.SQL                        : select m1_0.id,m1_0.duration,m1_0.genre,m1_0.image_url,m1_0.language,m1_0.movie_name,m1_0.rating,m1_0.release_date from movies m1_0
+2025-09-15T15:44:35.963+01:00 DEBUG 32520 --- [http-nio-8080-exec-3] com.bookmyshow.Services.MovieService     : Found 10 movies in the database.
+2025-09-15T15:44:36.023+01:00  INFO 32520 --- [http-nio-8080-exec-6] com.bookmyshow.Services.MovieService     : Fetching all movies.
+2025-09-15T15:44:36.034+01:00 DEBUG 32520 --- [http-nio-8080-exec-6] org.hibernate.SQL                        : select m1_0.id,m1_0.duration,m1_0.genre,m1_0.image_url,m1_0.language,m1_0.movie_name,m1_0.rating,m1_0.release_date from movies m1_0
+2025-09-15T15:44:36.059+01:00 DEBUG 32520 --- [http-nio-8080-exec-6] com.bookmyshow.Services.MovieService     : Found 10 movies in the database.
+2025-09-15T15:44:52.089+01:00  INFO 32520 --- [http-nio-8080-exec-7] com.bookmyshow.Services.MovieService     : Searching for movies with name containing: 'Avengers'
+2025-09-15T15:44:52.142+01:00 DEBUG 32520 --- [http-nio-8080-exec-7] org.hibernate.SQL                        : select m1_0.id,m1_0.duration,m1_0.genre,m1_0.image_url,m1_0.language,m1_0.movie_name,m1_0.rating,m1_0.release_date from movies m1_0 where upper(m1_0.movie_name) like upper(?) escape '\\'
+2025-09-15T15:44:52.149+01:00 DEBUG 32520 --- [http-nio-8080-exec-7] com.bookmyshow.Services.MovieService     : Found 1 movies matching the search term: 'Avengers'
+2025-09-15T15:44:52.265+01:00  INFO 32520 --- [http-nio-8080-exec-8] com.bookmyshow.Services.MovieService     : Fetching all movies.
+2025-09-15T15:44:52.268+01:00 DEBUG 32520 --- [http-nio-8080-exec-8] org.hibernate.SQL                        : select m1_0.id,m1_0.duration,m1_0.genre,m1_0.image_url,m1_0.language,m1_0.movie_name,m1_0.rating,m1_0.release_date from movies m1_0
+2025-09-15T15:44:52.280+01:00 DEBUG 32520 --- [http-nio-8080-exec-8] com.bookmyshow.Services.MovieService     : Found 10 movies in the database.
+2025-09-15T15:44:52.345+01:00  INFO 32520 --- [http-nio-8080-exec-8] com.bookmyshow.Services.MovieService     : Fetching all movies.
+2025-09-15T15:44:52.356+01:00 DEBUG 32520 --- [http-nio-8080-exec-8] org.hibernate.SQL                        : select m1_0.id,m1_0.duration,m1_0.genre,m1_0.image_url,m1_0.language,m1_0.movie_name,m1_0.rating,m1_0.release_date from movies m1_0
+2025-09-15T15:44:52.372+01:00 DEBUG 32520 --- [http-nio-8080-exec-8] com.bookmyshow.Services.MovieService     : Found 10 movies in the database.
+2025-09-15T15:45:19.775+01:00  INFO 32520 --- [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-09-15T15:45:19.782+01:00  INFO 32520 --- [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-09-15T15:45:19.800+01:00  INFO 32520 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-09-15T15:45:19.806+01:00  INFO 32520 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-09-15T15:45:19.825+01:00  INFO 32520 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
